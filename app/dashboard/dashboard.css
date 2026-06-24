@@ -40,7 +40,7 @@
   top: 0;
   z-index: 100;
 }
-.cx-dash .nav-logo img { height: 36px; width: auto; }
+.cx-dash .nav-logo img { height: 52px; width: auto; }
 .cx-dash .nav-center { display: flex; gap: 4px; }
 .cx-dash .nav-btn {
   padding: 8px 16px;

@@ -73,7 +73,7 @@ export default function DashboardLogin() {
         maxWidth: '95vw',
       }}>
         <div style={{ textAlign: 'center', marginBottom: '24px' }}>
-          <img src="/logo.png" alt="CHANGE_X Academy of Business" style={{ width: '200px', height: 'auto' }} />
+          <img src="/logo.png" alt="CHANGE_X Academy of Business" style={{ width: '200px', height: 'auto', display: 'block', margin: '0 auto' }} />
         </div>
 
         <div style={{
@@ -179,6 +179,24 @@ export default function DashboardLogin() {
           </form>
         )}
       </div>
+
+      <a
+        href="/"
+        style={{
+          display: 'block',
+          textAlign: 'center',
+          marginTop: '20px',
+          color: '#555',
+          fontSize: '13px',
+          textDecoration: 'none',
+          letterSpacing: '0.02em',
+          transition: 'color 0.2s',
+        }}
+        onMouseEnter={e => (e.currentTarget.style.color = '#aaa')}
+        onMouseLeave={e => (e.currentTarget.style.color = '#555')}
+      >
+        ← Back to main website
+      </a>
     </div>
   )
 }

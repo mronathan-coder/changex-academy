@@ -22,6 +22,7 @@ export default function Header() {
             <Link href="/insights" className="cx-nav-insights">Insights</Link>
             <Link href="/reach-out" className="cx-nav-reach">Reach Out</Link>
           </div>
+          <Link href="/dashboard" className="cx-nav-login">Team Login</Link>
           <button
             className="cx-hamburger"
             onClick={() => setOpen(o => !o)}
@@ -52,6 +53,7 @@ export default function Header() {
             <Link href="/coaching" className="cx-nav-coaching" onClick={close}>Coaching</Link>
             <Link href="/insights" className="cx-nav-insights" onClick={close}>Insights</Link>
             <Link href="/reach-out" className="cx-nav-reach" onClick={close}>Reach Out</Link>
+            <Link href="/dashboard" className="cx-nav-login" onClick={close}>Team Login</Link>
           </div>
         </div>
       )}

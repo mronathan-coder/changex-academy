@@ -66,6 +66,20 @@ a { color: inherit; text-decoration: none; }
 .cx-navlinks a.cx-nav-coaching:hover { background: #E8760A; color: #fff; }
 .cx-navlinks a.cx-nav-insights:hover { background: #C8B400; color: #1a1a1a; }
 .cx-navlinks a.cx-nav-reach:hover    { background: #6AAF2E; color: #fff; }
+.cx-nav-login {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.65);
+  border: 1px solid rgba(255,255,255,0.28);
+  border-radius: 6px;
+  padding: 6px 14px;
+  white-space: nowrap;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  transition: border-color .2s, color .2s, background .2s;
+  flex-shrink: 0;
+}
+.cx-nav-login:hover { color: #fff; border-color: rgba(255,255,255,0.6); background: rgba(255,255,255,0.07); }
 
 /* â”€â”€ Hero â”€â”€ */
 .cx-hero { padding: 52px 0 28px; position: relative; }
@@ -237,6 +251,8 @@ a { color: inherit; text-decoration: none; }
 .cx-mobile-menu a.cx-nav-coaching:hover { background: #E8760A; color: #fff; }
 .cx-mobile-menu a.cx-nav-insights:hover { background: #C8B400; color: #1a1a1a; }
 .cx-mobile-menu a.cx-nav-reach:hover    { background: #6AAF2E; color: #fff; }
+.cx-mobile-menu a.cx-nav-login { border: 1px solid rgba(255,255,255,0.25); margin-top: 6px; display: block; }
+.cx-mobile-menu a.cx-nav-login:hover { background: rgba(255,255,255,0.08); color: #fff; border-color: rgba(255,255,255,0.5); }
 
 /* â”€â”€ Floating WhatsApp button â”€â”€ */
 .cx-wa-float { position: fixed; bottom: 28px; right: 28px; z-index: 200; width: 56px; height: 56px; border-radius: 50%; background: #25D366; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 16px rgba(37,211,102,0.4); transition: transform .2s, box-shadow .2s; }
@@ -270,6 +286,7 @@ a { color: inherit; text-decoration: none; }
 @media(max-width:980px) {
   .cx-navlinks { display: none; }
   .cx-hamburger { display: flex; align-items: center; justify-content: center; }
+  a.cx-nav-login { display: none; }
   .cx-split { grid-template-columns: 1fr; gap: 36px; }
   .cx-res-grid { grid-template-columns: 1fr 1fr; }
   .cx-res:nth-child(5n) { border-right: 1px solid rgba(255,255,255,.3); }
