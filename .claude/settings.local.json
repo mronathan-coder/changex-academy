@@ -12,7 +12,15 @@
       "mcp__Claude_Preview__preview_start",
       "Bash(grep -iE \"\\\\.\\(jpg|jpeg|png|avif|webp\\)$\")",
       "PowerShell(Copy-Item \"C:\\\\Users\\\\mrona\\\\Desktop\\\\Business Presentation with Headset_edited.jpg\" \"C:\\\\Users\\\\mrona\\\\Desktop\\\\projects\\\\test-site\\\\public\\\\speaker-headset.jpg\")",
-      "PowerShell(Copy-Item \"C:\\\\Users\\\\mrona\\\\Desktop\\\\Lauging 2.png\" \"C:\\\\Users\\\\mrona\\\\Desktop\\\\projects\\\\test-site\\\\public\\\\laughing-audience.png\")"
+      "PowerShell(Copy-Item \"C:\\\\Users\\\\mrona\\\\Desktop\\\\Lauging 2.png\" \"C:\\\\Users\\\\mrona\\\\Desktop\\\\projects\\\\test-site\\\\public\\\\laughing-audience.png\")",
+      "Bash(git -C \"C:/Users/mrona/Desktop/projects/test-site\" status)",
+      "Bash(git -C \"C:/Users/mrona/Desktop/projects/test-site\" diff --stat HEAD)",
+      "Bash(git -C \"C:/Users/mrona/Desktop/projects/test-site\" log --oneline -5)",
+      "Bash(git -C \"C:/Users/mrona/Desktop/projects/test-site\" diff HEAD -- app/page.tsx)",
+      "Bash(git -C \"C:/Users/mrona/Desktop/projects/test-site\" status --short app/)",
+      "Bash(git -C \"C:/Users/mrona/Desktop/projects/test-site\" ls-files --others --exclude-standard app/ public/)",
+      "Bash(git -C \"C:/Users/mrona/Desktop/projects/test-site\" ls-files --modified app/ public/)",
+      "Bash(git -C \"C:/Users/mrona/Desktop/projects/test-site\" show --stat HEAD)"
     ]
   }
 }
