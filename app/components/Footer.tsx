@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="cx-footer">
+    <footer className="cx-footer" data-animate="">
       <div className="cx-wrap">
         <div className="cx-foot-top">
           <Link href="/">

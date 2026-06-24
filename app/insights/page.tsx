@@ -109,15 +109,15 @@ export default function Insights() {
       {/* ── Articles ── */}
       <section className="cx-section" id="articles" style={{ padding: "36px 0" }}>
         <div className="cx-wrap">
-          <div className="cx-label-row" style={{ marginBottom: 14 }}>
+          <div className="cx-label-row" style={{ marginBottom: 14 }} data-animate="">
             <span className="no">(01)</span>
             <div>
               <span className="cx-eyebrow">Latest thinking</span>
               <h2 style={{ marginTop: 8 }}>Recent articles</h2>
             </div>
           </div>
-          {articles.map(({ cat, title, summary, date, slug }) => (
-            <Link href={slug} key={title} className="cx-article-row" style={{ paddingTop: "14px", paddingBottom: "14px" }}>
+          {articles.map(({ cat, title, summary, date, slug }, i) => (
+            <Link href={slug} key={title} className="cx-article-row" style={{ paddingTop: "14px", paddingBottom: "14px" }} data-animate="" data-animate-delay={String(i * 100)}>
               <div className="cx-article-meta">
                 <span className="cx-eyebrow" style={{ color: "var(--accent)" }}>{cat}</span>
                 <span className="cx-article-date">{date}</span>
@@ -134,7 +134,7 @@ export default function Insights() {
 
       {/* ── CTA ── */}
       <section className="cx-cta" id="cta">
-        <div className="cx-wrap">
+        <div className="cx-wrap" data-animate="">
           <h2 className="cx-display">
             Want these<br />in your <span className="acc">inbox?</span>
           </h2>

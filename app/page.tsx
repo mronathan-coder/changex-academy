@@ -52,7 +52,7 @@ export default function Home() {
       {/* ── Problem ── */}
       <section className="cx-prob cx-section" style={{ padding: "48px 0" }}>
         <div className="cx-wrap">
-          <div className="cx-label-row" style={{ marginBottom: 14 }}>
+          <div className="cx-label-row" style={{ marginBottom: 14 }} data-animate="">
             <span className="no">(01)</span>
             <div>
               <span className="cx-eyebrow" style={{ color: "var(--accent)" }}>The real problem</span>
@@ -66,13 +66,13 @@ export default function Home() {
               "Meetings don't move things forward",
               "Leaders firefight instead of lead",
             ].map((item, i) => (
-              <div key={item} className="cx-prob-item" style={{ fontSize: "clamp(16px, 2vw, 28px)", paddingTop: "12px", paddingBottom: "12px" }}>
+              <div key={item} className="cx-prob-item" style={{ fontSize: "clamp(16px, 2vw, 28px)", paddingTop: "12px", paddingBottom: "12px" }} data-animate="" data-animate-delay={String(i * 120)}>
                 <span className="n">0{i + 1}</span>
                 {item}
               </div>
             ))}
           </div>
-          <p className="cx-prob-note" style={{ marginTop: 16 }}>
+          <p className="cx-prob-note" style={{ marginTop: 16 }} data-animate="" data-animate-delay="480">
             This is not a people problem. <b>It&apos;s how the work is set up.</b>
           </p>
         </div>
@@ -81,7 +81,7 @@ export default function Home() {
       {/* ── Approach ── */}
       <section className="cx-section" id="approach" style={{ padding: "36px 0" }}>
         <div className="cx-wrap">
-          <div className="cx-label-row">
+          <div className="cx-label-row" data-animate="">
             <span className="no">(02)</span>
             <div>
               <span className="cx-eyebrow">Where we work</span>
@@ -89,7 +89,7 @@ export default function Home() {
             </div>
           </div>
           <div className="cx-split">
-            <div className="cx-ph" style={{ aspectRatio: "4/3" }}>
+            <div className="cx-ph" style={{ aspectRatio: "4/3" }} data-animate="from-left">
               <Image src="/team.jpg" alt="Team working together" fill style={{ objectFit: "cover" }} />
             </div>
             <div className="cx-steps" style={{ alignSelf: "stretch", justifyContent: "space-between" }}>
@@ -97,8 +97,8 @@ export default function Home() {
                 { n: "01", h: "Diagnose what's in the way", p: "A practical read on how the team actually operates — not a theoretical model." },
                 { n: "02", h: "Reset how decisions get made", p: "Clear priorities, ownership and decision rights that hold under pressure." },
                 { n: "03", h: "Make the new way stick", p: "Support so performance becomes stable, not dependent on constant effort." },
-              ].map(({ n, h, p }) => (
-                <div key={n} className="cx-step">
+              ].map(({ n, h, p }, i) => (
+                <div key={n} className="cx-step" data-animate="" data-animate-delay={String(i * 150)}>
                   <span className="big">{n}</span>
                   <div><h4>{h}</h4><p>{p}</p></div>
                 </div>
@@ -111,7 +111,7 @@ export default function Home() {
       {/* ── Engagements ── */}
       <section className="cx-section" style={{ padding: "36px 0" }}>
         <div className="cx-wrap">
-          <div className="cx-label-row">
+          <div className="cx-label-row" data-animate="">
             <span className="no">(03)</span>
             <div>
               <span className="cx-eyebrow">What we do</span>
@@ -123,8 +123,8 @@ export default function Home() {
             { dur: "1 Month",  h: "Reset & Redesign",       p: "Reset and redesign how the team operates. Clear ownership, decisions made and held, friction reduced." },
             { dur: "3 Months", h: "Make It Stick",          p: "Embed new ways of working. Consistent decision-making, healthier disagreement, trust under pressure." },
             { dur: "6 Months", h: "Perform Under Pressure", p: "Shift how a critical team performs when it matters most. Sustained improvement, less dependence on constant effort." },
-          ].map(({ dur, h, p }) => (
-            <div key={h} className="cx-eng-row" style={{ paddingTop: "14px", paddingBottom: "14px" }}>
+          ].map(({ dur, h, p }, i) => (
+            <div key={h} className="cx-eng-row" style={{ paddingTop: "14px", paddingBottom: "14px" }} data-animate="" data-animate-delay={String(i * 150)}>
               <span className="dur">{dur}</span>
               <div><h3>{h}</h3><p>{p}</p></div>
             </div>
@@ -135,14 +135,14 @@ export default function Home() {
       {/* ── Results ── */}
       <section className="cx-results cx-section">
         <div className="cx-wrap">
-          <div className="cx-label-row">
+          <div className="cx-label-row" data-animate="">
             <span className="no" style={{ color: "#fff" }}>(04)</span>
             <div>
               <span className="cx-eyebrow">The results</span>
               <h2 style={{ marginTop: 8 }}>What this looks like in practice</h2>
             </div>
           </div>
-          <div className="cx-res-grid">
+          <div className="cx-res-grid" data-animate="">
             {[
               { ico: "↑", lbl: "Higher engagement" },
               { ico: "→", lbl: "Faster execution" },
@@ -161,7 +161,7 @@ export default function Home() {
 
       {/* ── CTA ── */}
       <section className="cx-cta" id="cta">
-        <div className="cx-wrap">
+        <div className="cx-wrap" data-animate="">
           <h2 className="cx-display">
             Let&apos;s fix how<br />the work <span className="acc">works.</span>
           </h2>

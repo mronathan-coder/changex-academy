@@ -60,7 +60,7 @@ export default function WhatWeDo() {
       {/* ── (01) The Problem We Solve ── */}
       <section className="cx-prob cx-section" style={{ padding: "48px 0" }}>
         <div className="cx-wrap">
-          <div className="cx-label-row" style={{ marginBottom: 14 }}>
+          <div className="cx-label-row" style={{ marginBottom: 14 }} data-animate="">
             <span className="no">(01)</span>
             <div>
               <span className="cx-eyebrow" style={{ color: "var(--accent)" }}>Why teams stall</span>
@@ -74,13 +74,13 @@ export default function WhatWeDo() {
               "Agreements made in meetings that don't hold outside them",
               "Effort going up, but output and morale going down",
             ].map((item, i) => (
-              <div key={item} className="cx-prob-item" style={{ fontSize: "clamp(16px, 2vw, 28px)", paddingTop: "12px", paddingBottom: "12px" }}>
+              <div key={item} className="cx-prob-item" style={{ fontSize: "clamp(16px, 2vw, 28px)", paddingTop: "12px", paddingBottom: "12px" }} data-animate="" data-animate-delay={String(i * 120)}>
                 <span className="n">0{i + 1}</span>
                 {item}
               </div>
             ))}
           </div>
-          <p className="cx-prob-note" style={{ marginTop: 16 }}>
+          <p className="cx-prob-note" style={{ marginTop: 16 }} data-animate="" data-animate-delay="480">
             We fix the system. <b>Not the symptoms.</b>
           </p>
         </div>
@@ -89,7 +89,7 @@ export default function WhatWeDo() {
       {/* ── (02) Engagements ── */}
       <section className="cx-section" id="engagements" style={{ padding: "36px 0" }}>
         <div className="cx-wrap">
-          <div className="cx-label-row" style={{ marginBottom: 14 }}>
+          <div className="cx-label-row" style={{ marginBottom: 14 }} data-animate="">
             <span className="no">(02)</span>
             <div>
               <span className="cx-eyebrow">Our engagements</span>
@@ -145,8 +145,8 @@ export default function WhatWeDo() {
               ],
               note: "Best for: critical teams where high performance is non-negotiable.",
             },
-          ].map(({ dur, h, sub, bullets, note }) => (
-            <div key={h} className="cx-wwd-card" style={{ paddingTop: "18px", paddingBottom: "18px" }}>
+          ].map(({ dur, h, sub, bullets, note }, i) => (
+            <div key={h} className="cx-wwd-card" style={{ paddingTop: "18px", paddingBottom: "18px" }} data-animate="" data-animate-delay={String(i * 150)}>
               <div className="cx-wwd-card-head" style={{ marginBottom: 12 }}>
                 <span className="dur">{dur}</span>
                 <div>
@@ -168,7 +168,7 @@ export default function WhatWeDo() {
       {/* ── (03) What's always included ── */}
       <section className="cx-section cx-section-ink" style={{ borderTop: "1px solid var(--line)", background: "var(--ink)", color: "var(--paper)", padding: "36px 0" }}>
         <div className="cx-wrap">
-          <div className="cx-label-row" style={{ marginBottom: 14 }}>
+          <div className="cx-label-row" style={{ marginBottom: 14 }} data-animate="">
             <span className="no" style={{ color: "var(--accent)" }}>(03)</span>
             <div>
               <span className="cx-eyebrow" style={{ color: "var(--accent)" }}>Every engagement</span>
@@ -196,8 +196,8 @@ export default function WhatWeDo() {
               h: "Support as the changes go into practice",
               p: "We don't disappear after the session. We stay alongside the team so new habits form and improvements don't revert under pressure.",
             },
-          ].map(({ tag, h, p }) => (
-            <div key={h} className="cx-eng-row" style={{ borderColor: "rgba(246,245,241,.14)", paddingTop: "10px", paddingBottom: "10px" }}>
+          ].map(({ tag, h, p }, i) => (
+            <div key={h} className="cx-eng-row" style={{ borderColor: "rgba(246,245,241,.14)", paddingTop: "10px", paddingBottom: "10px" }} data-animate="" data-animate-delay={String(i * 150)}>
               <span className="dur" style={{ color: "var(--accent)" }}>{tag}</span>
               <div>
                 <h3 style={{ color: "#fff" }}>{h}</h3>
@@ -210,7 +210,7 @@ export default function WhatWeDo() {
 
       {/* ── CTA ── */}
       <section className="cx-cta" id="cta">
-        <div className="cx-wrap">
+        <div className="cx-wrap" data-animate="">
           <h2 className="cx-display">
             Not sure which<br />engagement is <span className="acc">right?</span>
           </h2>

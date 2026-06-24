@@ -58,7 +58,7 @@ export default function Coaching() {
       {/* ── (01) What coaching is / isn't ── */}
       <section className="cx-prob cx-section" style={{ padding: "48px 0" }}>
         <div className="cx-wrap">
-          <div className="cx-label-row" style={{ marginBottom: 14 }}>
+          <div className="cx-label-row" style={{ marginBottom: 14 }} data-animate="">
             <span className="no">(01)</span>
             <div>
               <span className="cx-eyebrow" style={{ color: "var(--accent)" }}>What this is</span>
@@ -72,13 +72,13 @@ export default function Coaching() {
               "The challenges are live — decisions can't wait for the next workshop",
               "You want clarity and momentum, not a framework to implement",
             ].map((item, i) => (
-              <div key={i} className="cx-prob-item" style={{ fontSize: "clamp(16px, 2vw, 28px)", paddingTop: "12px", paddingBottom: "12px" }}>
+              <div key={i} className="cx-prob-item" style={{ fontSize: "clamp(16px, 2vw, 28px)", paddingTop: "12px", paddingBottom: "12px" }} data-animate="" data-animate-delay={String(i * 120)}>
                 <span className="n">0{i + 1}</span>
                 {item}
               </div>
             ))}
           </div>
-          <p className="cx-prob-note" style={{ marginTop: 16 }}>
+          <p className="cx-prob-note" style={{ marginTop: 16 }} data-animate="" data-animate-delay="480">
             If that sounds familiar, <b>this is for you.</b>
           </p>
         </div>
@@ -87,7 +87,7 @@ export default function Coaching() {
       {/* ── (02) What we work on ── */}
       <section className="cx-section" id="how-it-works" style={{ padding: "36px 0" }}>
         <div className="cx-wrap">
-          <div className="cx-label-row" style={{ marginBottom: 14 }}>
+          <div className="cx-label-row" style={{ marginBottom: 14 }} data-animate="">
             <span className="no">(02)</span>
             <div>
               <span className="cx-eyebrow">What we work on</span>
@@ -115,8 +115,8 @@ export default function Coaching() {
               h: "How you show up when it matters most",
               p: "Confidence in the room, conviction under challenge, composure under pressure. We work on the leader you need to be in this specific context.",
             },
-          ].map(({ tag, h, p }) => (
-            <div key={h} className="cx-eng-row" style={{ paddingTop: "14px", paddingBottom: "14px" }}>
+          ].map(({ tag, h, p }, i) => (
+            <div key={h} className="cx-eng-row" style={{ paddingTop: "14px", paddingBottom: "14px" }} data-animate="" data-animate-delay={String(i * 150)}>
               <span className="dur">{tag}</span>
               <div><h3>{h}</h3><p dangerouslySetInnerHTML={{ __html: p }} /></div>
             </div>
@@ -127,7 +127,7 @@ export default function Coaching() {
       {/* ── (03) How it works ── */}
       <section className="cx-section" style={{ borderTop: "1px solid var(--line)", padding: "36px 0" }}>
         <div className="cx-wrap">
-          <div className="cx-label-row">
+          <div className="cx-label-row" data-animate="">
             <span className="no">(03)</span>
             <div>
               <span className="cx-eyebrow">The format</span>
@@ -156,8 +156,8 @@ export default function Coaching() {
                 h: "Progress that compounds",
                 p: "Each session builds on the last. Over time, you make better decisions faster, lead with more confidence, and rely less on external input.",
               },
-            ].map(({ n, h, p }) => (
-              <div key={n} className="cx-step">
+            ].map(({ n, h, p }, i) => (
+              <div key={n} className="cx-step" data-animate="" data-animate-delay={String(i * 150)}>
                 <span className="big">{n}</span>
                 <div>
                   <h4>{h}</h4>
@@ -172,14 +172,14 @@ export default function Coaching() {
       {/* ── (04) Results ── */}
       <section className="cx-results cx-section">
         <div className="cx-wrap">
-          <div className="cx-label-row">
+          <div className="cx-label-row" data-animate="">
             <span className="no" style={{ color: "#fff" }}>(04)</span>
             <div>
               <span className="cx-eyebrow">What changes</span>
               <h2 style={{ marginTop: 8 }}>What leaders tell us shifts</h2>
             </div>
           </div>
-          <div className="cx-res-grid">
+          <div className="cx-res-grid" data-animate="">
             {[
               { ico: "→", lbl: "Faster, clearer decisions" },
               { ico: "↑", lbl: "Greater confidence" },
@@ -198,7 +198,7 @@ export default function Coaching() {
 
       {/* ── CTA ── */}
       <section className="cx-cta" id="cta">
-        <div className="cx-wrap">
+        <div className="cx-wrap" data-animate="">
           <h2 className="cx-display">
             Ready to think<br />more <span className="acc">clearly?</span>
           </h2>

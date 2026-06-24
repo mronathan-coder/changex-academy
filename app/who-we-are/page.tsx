@@ -59,7 +59,7 @@ export default function WhoWeAre() {
       {/* ── (01) About Us ── */}
       <section className="cx-section" style={{ padding: "36px 0" }}>
         <div className="cx-wrap">
-          <div className="cx-label-row">
+          <div className="cx-label-row" data-animate="">
             <span className="no">(01)</span>
             <div>
               <span className="cx-eyebrow">Our story</span>
@@ -89,7 +89,7 @@ export default function WhoWeAre() {
                 See how we work →
               </Link>
             </div>
-            <div className="cx-ph" style={{ aspectRatio: "4/3" }}>
+            <div className="cx-ph" style={{ aspectRatio: "4/3" }} data-animate="from-left">
               <Image src="/speaker-headset.jpg" alt="Speaker presenting to a team" fill style={{ objectFit: "cover" }} />
             </div>
           </div>
@@ -99,7 +99,7 @@ export default function WhoWeAre() {
       {/* ── (02) The Challenge ── */}
       <section className="cx-prob cx-section" style={{ padding: "48px 0" }}>
         <div className="cx-wrap">
-          <div className="cx-label-row" style={{ marginBottom: 14 }}>
+          <div className="cx-label-row" style={{ marginBottom: 14 }} data-animate="">
             <span className="no">(02)</span>
             <div>
               <span className="cx-eyebrow" style={{ color: "var(--accent)" }}>The real challenge</span>
@@ -113,13 +113,13 @@ export default function WhoWeAre() {
               "They train people — but don't fix how the work is actually set up",
               "They push harder — when what's needed is clarity, not effort",
             ].map((item, i) => (
-              <div key={item} className="cx-prob-item" style={{ fontSize: "clamp(16px, 2vw, 28px)", paddingTop: "12px", paddingBottom: "12px" }}>
+              <div key={item} className="cx-prob-item" style={{ fontSize: "clamp(16px, 2vw, 28px)", paddingTop: "12px", paddingBottom: "12px" }} data-animate="" data-animate-delay={String(i * 120)}>
                 <span className="n">0{i + 1}</span>
                 {item}
               </div>
             ))}
           </div>
-          <p className="cx-prob-note" style={{ marginTop: 16 }}>
+          <p className="cx-prob-note" style={{ marginTop: 16 }} data-animate="" data-animate-delay="480">
             This is not a people problem. <b>It&apos;s a team system problem.</b>
           </p>
         </div>
@@ -128,7 +128,7 @@ export default function WhoWeAre() {
       {/* ── (03) How We Work ── */}
       <section className="cx-section" id="how-we-work" style={{ padding: "36px 0" }}>
         <div className="cx-wrap">
-          <div className="cx-label-row">
+          <div className="cx-label-row" data-animate="">
             <span className="no">(03)</span>
             <div>
               <span className="cx-eyebrow">Our approach</span>
@@ -156,8 +156,8 @@ export default function WhoWeAre() {
                   h: "Build stability, not dependency",
                   p: "We help teams embed new ways of working so performance becomes consistent — and doesn't depend on constant management effort.",
                 },
-              ].map(({ n, h, p }) => (
-                <div key={n} className="cx-step">
+              ].map(({ n, h, p }, i) => (
+                <div key={n} className="cx-step" data-animate="" data-animate-delay={String(i * 150)}>
                   <span className="big">{n}</span>
                   <div><h4>{h}</h4><p>{p}</p></div>
                 </div>
@@ -170,7 +170,7 @@ export default function WhoWeAre() {
       {/* ── (04) What Makes Us Different ── */}
       <section className="cx-section" style={{ borderTop: "1px solid var(--line)", padding: "36px 0" }}>
         <div className="cx-wrap">
-          <div className="cx-label-row">
+          <div className="cx-label-row" data-animate="">
             <span className="no">(04)</span>
             <div>
               <span className="cx-eyebrow">What makes us different</span>
@@ -198,8 +198,8 @@ export default function WhoWeAre() {
               h: "Ongoing support as teams apply new ways of working",
               p: "We stay alongside teams as they put changes into practice, so new habits form and results become stable over time.",
             },
-          ].map(({ tag, h, p }) => (
-            <div key={h} className="cx-eng-row" style={{ paddingTop: "14px", paddingBottom: "14px" }}>
+          ].map(({ tag, h, p }, i) => (
+            <div key={h} className="cx-eng-row" style={{ paddingTop: "14px", paddingBottom: "14px" }} data-animate="" data-animate-delay={String(i * 150)}>
               <span className="dur">{tag}</span>
               <div><h3>{h}</h3><p>{p}</p></div>
               <span className="go">→</span>
@@ -211,14 +211,14 @@ export default function WhoWeAre() {
       {/* ── (05) The Results ── */}
       <section className="cx-results cx-section">
         <div className="cx-wrap">
-          <div className="cx-label-row">
+          <div className="cx-label-row" data-animate="">
             <span className="no" style={{ color: "#fff" }}>(05)</span>
             <div>
               <span className="cx-eyebrow">The results</span>
               <h2 style={{ marginTop: 8 }}>What this looks like in practice</h2>
             </div>
           </div>
-          <div className="cx-res-grid">
+          <div className="cx-res-grid" data-animate="">
             {[
               { ico: "↑", lbl: "Higher engagement" },
               { ico: "→", lbl: "Faster execution" },
@@ -237,7 +237,7 @@ export default function WhoWeAre() {
 
       {/* ── CTA ── */}
       <section className="cx-cta" id="cta">
-        <div className="cx-wrap">
+        <div className="cx-wrap" data-animate="">
           <h2 className="cx-display">
             Ready to fix<br />how your team <span className="acc">works?</span>
           </h2>
