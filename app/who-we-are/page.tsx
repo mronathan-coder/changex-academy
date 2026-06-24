@@ -68,7 +68,7 @@ export default function WhoWeAre() {
           </div>
           <div className="cx-split">
             <div style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", alignSelf: "stretch" }}>
-              <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
+              <div className="cx-about-paras" style={{ display: "flex", flexDirection: "column", gap: 14 }}>
                 <p style={{ fontSize: 19, lineHeight: 1.7, color: "var(--ink-soft)", maxWidth: "44ch" }}>
                   We partner closely with leaders and their teams to address the real
                   challenges that limit performance — unclear priorities, slow

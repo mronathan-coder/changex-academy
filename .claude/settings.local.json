@@ -20,7 +20,9 @@
       "Bash(git -C \"C:/Users/mrona/Desktop/projects/test-site\" status --short app/)",
       "Bash(git -C \"C:/Users/mrona/Desktop/projects/test-site\" ls-files --others --exclude-standard app/ public/)",
       "Bash(git -C \"C:/Users/mrona/Desktop/projects/test-site\" ls-files --modified app/ public/)",
-      "Bash(git -C \"C:/Users/mrona/Desktop/projects/test-site\" show --stat HEAD)"
+      "Bash(git -C \"C:/Users/mrona/Desktop/projects/test-site\" show --stat HEAD)",
+      "PowerShell($f = \"C:\\\\Users\\\\mrona\\\\Desktop\\\\projects\\\\test-site\\\\app\\\\globals.css\"; \\(Get-Content $f -Raw\\) | Set-Content $f -NoNewline -Encoding utf8)",
+      "PowerShell($f = \"C:\\\\Users\\\\mrona\\\\Desktop\\\\projects\\\\test-site\\\\app\\\\globals.css\"; $c = [System.IO.File]::ReadAllText\\($f, [System.Text.Encoding]::UTF8\\); [System.IO.File]::WriteAllText\\($f, $c, [System.Text.Encoding]::UTF8\\))"
     ]
   }
 }

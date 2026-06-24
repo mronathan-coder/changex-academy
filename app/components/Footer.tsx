@@ -14,7 +14,7 @@ export default function Footer() {
             <Link href="/what-we-do">What We Do</Link>
             <Link href="/coaching">Coaching</Link>
             <Link href="/insights">Insights</Link>
-            <Link href="#cta">Reach Out To Us</Link>
+            <Link href="/reach-out">Reach Out To Us</Link>
           </div>
         </div>
         <div className="cx-foot-bottom">
