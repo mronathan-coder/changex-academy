@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx tsc *)",
+      "Bash(echo \"EXIT: $?\")",
+      "Bash(grep -o 'wixstatic\\\\.com[^\"\\\\\\\\]*' \"C:/Users/mrona/Desktop/projects/test-site/public/bb62c2ea-7087-49e7-9405-6529ea905e56.html\")",
+      "Bash(cd \"C:/Users/mrona/Desktop/projects/test-site/public\" && rm -f *.css *.download *.html *.js && rm -rf \"destination\" \"js\" \"js\\(1\\)\" \"js\\(2\\)\" \"js\\(3\\)\" \"es-module-shims@1.8.2\" && ls)",
+      "mcp__visualize__read_me",
+      "mcp__visualize__show_widget",
+      "Bash(npm run *)",
+      "Bash(mkdir -p \"C:/Users/mrona/Desktop/projects/test-site/.claude\")",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(grep -iE \"\\\\.\\(jpg|jpeg|png|avif|webp\\)$\")",
+      "PowerShell(Copy-Item \"C:\\\\Users\\\\mrona\\\\Desktop\\\\Business Presentation with Headset_edited.jpg\" \"C:\\\\Users\\\\mrona\\\\Desktop\\\\projects\\\\test-site\\\\public\\\\speaker-headset.jpg\")",
+      "PowerShell(Copy-Item \"C:\\\\Users\\\\mrona\\\\Desktop\\\\Lauging 2.png\" \"C:\\\\Users\\\\mrona\\\\Desktop\\\\projects\\\\test-site\\\\public\\\\laughing-audience.png\")"
+    ]
+  }
+}
