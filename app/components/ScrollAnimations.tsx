@@ -9,12 +9,20 @@ export default function ScrollAnimations() {
     if (!("IntersectionObserver" in window)) return;
 
     let observer: IntersectionObserver | null = null;
+    let timeoutId: ReturnType<typeof setTimeout>;
 
-    const setup = () => {
+    const setup = (attempt: number) => {
       const elements = Array.from(
         document.querySelectorAll<HTMLElement>("[data-animate]")
       );
-      if (elements.length === 0) return;
+
+      // Retry up to 5 times at 80ms intervals if page content isn't in DOM yet
+      if (elements.length === 0) {
+        if (attempt < 5) {
+          timeoutId = setTimeout(() => setup(attempt + 1), 80);
+        }
+        return;
+      }
 
       observer = new IntersectionObserver(
         (entries, obs) => {
@@ -43,11 +51,10 @@ export default function ScrollAnimations() {
       });
     };
 
-    // Wait for Next.js App Router to finish rendering the new page into the DOM
-    const id = setTimeout(setup, 80);
+    timeoutId = setTimeout(() => setup(0), 80);
 
     return () => {
-      clearTimeout(id);
+      clearTimeout(timeoutId);
       observer?.disconnect();
     };
   }, [pathname]);

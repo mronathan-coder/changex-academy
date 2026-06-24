@@ -136,7 +136,7 @@ export default function WhoWeAre() {
             </div>
           </div>
           <div className="cx-split">
-            <div className="cx-ph" style={{ aspectRatio: "4/3" }}>
+            <div className="cx-ph" style={{ aspectRatio: "4/3" }} data-animate="from-left">
               <Image src="/laughing-audience.png" alt="Audience laughing during a session" fill style={{ objectFit: "cover" }} />
             </div>
             <div className="cx-steps" style={{ alignSelf: "stretch", justifyContent: "space-between" }}>
