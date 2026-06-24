@@ -10,13 +10,15 @@ export default function ScrollAnimations() {
 
     let observer: IntersectionObserver | null = null;
     let timeoutId: ReturnType<typeof setTimeout>;
+    let cancelled = false;
 
     const setup = (attempt: number) => {
+      if (cancelled) return;
+
       const elements = Array.from(
         document.querySelectorAll<HTMLElement>("[data-animate]")
       );
 
-      // Retry up to 5 times at 80ms intervals if page content isn't in DOM yet
       if (elements.length === 0) {
         if (attempt < 5) {
           timeoutId = setTimeout(() => setup(attempt + 1), 80);
@@ -24,38 +26,45 @@ export default function ScrollAnimations() {
         return;
       }
 
+      // Reset every element to its hidden starting state
+      elements.forEach((el) => {
+        el.classList.remove("cx-in");
+        el.style.transitionDelay = "0ms";
+      });
+
       observer = new IntersectionObserver(
-        (entries, obs) => {
+        (entries) => {
           entries.forEach((entry) => {
-            if (!entry.isIntersecting) return;
             const el = entry.target as HTMLElement;
-            const delay = parseInt(el.dataset.animateDelay ?? "0", 10);
-            setTimeout(() => el.classList.add("cx-anim-in"), delay);
-            obs.unobserve(el);
+            if (entry.isIntersecting) {
+              const delay = parseInt(el.dataset.animateDelay ?? "0", 10);
+              el.style.transitionDelay = `${delay}ms`;
+              el.classList.add("cx-in");
+            } else {
+              // Reset so the animation replays on next entry
+              el.style.transitionDelay = "0ms";
+              el.classList.remove("cx-in");
+            }
           });
         },
-        { threshold: 0.15, rootMargin: "-50px" }
+        { threshold: 0.15 }
       );
 
-      elements.forEach((el) => {
-        const rect = el.getBoundingClientRect();
-        if (rect.top < window.innerHeight && rect.bottom > 0) {
-          el.classList.add("cx-anim-in");
-          return;
-        }
-        if (el.dataset.animate === "from-left") {
-          el.classList.add("cx-anim-from-left");
-        }
-        el.classList.add("cx-anim-ready");
-        observer!.observe(el);
-      });
+      // Observe every element — no unobserve so animations retrigger
+      elements.forEach((el) => observer!.observe(el));
     };
 
     timeoutId = setTimeout(() => setup(0), 80);
 
     return () => {
+      cancelled = true;
       clearTimeout(timeoutId);
       observer?.disconnect();
+      // Restore visibility on teardown so next page starts clean
+      document.querySelectorAll<HTMLElement>("[data-animate]").forEach((el) => {
+        el.classList.remove("cx-in");
+        el.style.transitionDelay = "";
+      });
     };
   }, [pathname]);
 

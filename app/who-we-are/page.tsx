@@ -89,7 +89,7 @@ export default function WhoWeAre() {
                 See how we work →
               </Link>
             </div>
-            <div className="cx-ph" style={{ aspectRatio: "4/3" }} data-animate="from-left">
+            <div className="cx-ph" style={{ aspectRatio: "4/3" }} data-animate="">
               <Image src="/speaker-headset.jpg" alt="Speaker presenting to a team" fill style={{ objectFit: "cover" }} />
             </div>
           </div>
@@ -136,7 +136,7 @@ export default function WhoWeAre() {
             </div>
           </div>
           <div className="cx-split">
-            <div className="cx-ph" style={{ aspectRatio: "4/3" }} data-animate="from-left">
+            <div className="cx-ph" style={{ aspectRatio: "4/3" }} data-animate="">
               <Image src="/laughing-audience.png" alt="Audience laughing during a session" fill style={{ objectFit: "cover" }} />
             </div>
             <div className="cx-steps" style={{ alignSelf: "stretch", justifyContent: "space-between" }}>

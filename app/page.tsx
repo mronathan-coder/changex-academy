@@ -89,7 +89,7 @@ export default function Home() {
             </div>
           </div>
           <div className="cx-split">
-            <div className="cx-ph" style={{ aspectRatio: "4/3" }} data-animate="from-left">
+            <div className="cx-ph" style={{ aspectRatio: "4/3" }} data-animate="">
               <Image src="/team.jpg" alt="Team working together" fill style={{ objectFit: "cover" }} />
             </div>
             <div className="cx-steps" style={{ alignSelf: "stretch", justifyContent: "space-between" }}>
