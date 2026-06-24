@@ -36,7 +36,7 @@ export default function WhatWeDo() {
               <span className="acc cx-word-anim" style={{ animationDelay: "400ms" }}>us.</span>
             </span>
           </h1>
-          <div className="cx-hero-foot" style={{ gridTemplateColumns: "minmax(0, 44ch) 1fr" }}>
+          <div className="cx-hero-foot">
             <p className="lede">
               Every engagement is built around your team&apos;s specific situation —
               the depth depends on how much change you need to make stick.
@@ -47,10 +47,10 @@ export default function WhatWeDo() {
                 <Link href="#cta" className="cx-btn ghost">Talk to us</Link>
               </div>
               <div className="cx-ticker">
-                <span className="d" />1 Day
-                <span className="d" />1 Month
-                <span className="d" />3 Months
-                <span className="d" />6 Months
+                <span className="cx-tick"><span className="d" />1 Day</span>
+                <span className="cx-tick"><span className="d" />1 Month</span>
+                <span className="cx-tick"><span className="d" />3 Months</span>
+                <span className="cx-tick"><span className="d" />6 Months</span>
               </div>
             </div>
           </div>

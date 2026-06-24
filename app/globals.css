@@ -93,6 +93,7 @@ a { color: inherit; text-decoration: none; }
 .cx-hero-foot .cta  { display: flex; gap: 14px; flex-wrap: wrap; }
 .cx-ticker { display: flex; gap: 18px; align-items: center; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-soft); }
 .cx-ticker .d { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); flex-shrink: 0; }
+.cx-tick { display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; }
 
 /* â”€â”€ Section shared â”€â”€ */
 .cx-section { padding: 75px 0; position: relative; }

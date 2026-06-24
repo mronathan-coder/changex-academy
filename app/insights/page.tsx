@@ -86,7 +86,7 @@ export default function Insights() {
               <span className="acc cx-word-anim" style={{ animationDelay: "320ms" }}>work.</span>
             </span>
           </h1>
-          <div className="cx-hero-foot" style={{ gridTemplateColumns: "minmax(0, 44ch) 1fr" }}>
+          <div className="cx-hero-foot">
             <p className="lede">
               Practical perspectives on team performance, leadership, and the
               real reasons organisations stall — and what to do about it.
@@ -97,9 +97,9 @@ export default function Insights() {
                 <Link href="#articles" className="cx-btn ghost">See all insights</Link>
               </div>
               <div className="cx-ticker">
-                <span className="d" />Team performance
-                <span className="d" />Leadership
-                <span className="d" />Decision-making
+                <span className="cx-tick"><span className="d" />Team performance</span>
+                <span className="cx-tick"><span className="d" />Leadership</span>
+                <span className="cx-tick"><span className="d" />Decision-making</span>
               </div>
             </div>
           </div>
