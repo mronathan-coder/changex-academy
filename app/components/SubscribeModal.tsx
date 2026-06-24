@@ -1,22 +1,16 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 
 export default function SubscribeModal() {
   const [open, setOpen] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
-  return (
-    <>
-      <button
-        className="cx-btn dark"
-        onClick={() => setOpen(true)}
-        style={{ cursor: "pointer", border: "none" }}
-      >
-        Subscribe to our monthly insights →
-      </button>
+  useEffect(() => { setMounted(true); }, []);
 
-      {open && (
-        <div
+  const overlay = open && (
+    <div
           style={{
             position: "fixed", inset: 0, zIndex: 1000,
             background: "rgba(0,0,0,0.65)",
@@ -28,6 +22,7 @@ export default function SubscribeModal() {
           <div style={{
             background: "var(--paper)",
             borderRadius: 8,
+            border: "1px solid #000",
             padding: "48px",
             width: "100%",
             maxWidth: 520,
@@ -65,24 +60,24 @@ export default function SubscribeModal() {
                   <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14 }}>
                     <label style={{ display: "flex", flexDirection: "column", gap: 5 }}>
                       <span style={{ fontSize: 12, fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.06em", color: "var(--ink-soft)" }}>First name</span>
-                      <input required type="text" placeholder="Jane" style={inputStyle} />
+                      <input required type="text" placeholder="" style={inputStyle} />
                     </label>
                     <label style={{ display: "flex", flexDirection: "column", gap: 5 }}>
                       <span style={{ fontSize: 12, fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.06em", color: "var(--ink-soft)" }}>Last name</span>
-                      <input required type="text" placeholder="Smith" style={inputStyle} />
+                      <input required type="text" placeholder="" style={inputStyle} />
                     </label>
                   </div>
                   <label style={{ display: "flex", flexDirection: "column", gap: 5 }}>
                     <span style={{ fontSize: 12, fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.06em", color: "var(--ink-soft)" }}>Email address</span>
-                    <input required type="email" placeholder="jane@company.com" style={inputStyle} />
+                    <input required type="email" placeholder="" style={inputStyle} />
                   </label>
                   <label style={{ display: "flex", flexDirection: "column", gap: 5 }}>
                     <span style={{ fontSize: 12, fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.06em", color: "var(--ink-soft)" }}>Company</span>
-                    <input required type="text" placeholder="Acme Corp" style={inputStyle} />
+                    <input required type="text" placeholder="" style={inputStyle} />
                   </label>
                   <label style={{ display: "flex", flexDirection: "column", gap: 5 }}>
                     <span style={{ fontSize: 12, fontWeight: 600, textTransform: "uppercase", letterSpacing: "0.06em", color: "var(--ink-soft)" }}>Country</span>
-                    <input required type="text" placeholder="United Kingdom" style={inputStyle} />
+                    <input required type="text" placeholder="" style={inputStyle} />
                   </label>
                   <button
                     type="submit"
@@ -96,7 +91,19 @@ export default function SubscribeModal() {
             )}
           </div>
         </div>
-      )}
+  );
+
+  return (
+    <>
+      <button
+        className="cx-btn dark"
+        onClick={() => setOpen(true)}
+        style={{ cursor: "pointer", border: "none" }}
+      >
+        Subscribe to our monthly insights →
+      </button>
+
+      {mounted && overlay && createPortal(overlay, document.body)}
     </>
   );
 }
