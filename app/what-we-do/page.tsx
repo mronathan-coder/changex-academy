@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
   title: "What We Do | Change_X Academy of Business",
-  description: "Four depths of team engagement — from a one-day reset to a six-month performance transformation.",
+  description: "Four depths of team engagement, from a one-day reset to a six-month performance transformation.",
 };
 
 export default function WhatWeDo() {
@@ -38,8 +38,8 @@ export default function WhatWeDo() {
           </h1>
           <div className="cx-hero-foot">
             <p className="lede">
-              Every engagement is built around your team&apos;s specific situation —
-              the depth depends on how much change you need to make stick.
+              Every engagement is built around your team&apos;s specific situation,
+              and the depth depends on how much change you need to make stick.
             </p>
             <div className="right">
               <div className="cta">
@@ -70,7 +70,7 @@ export default function WhatWeDo() {
           <div className="cx-prob-list">
             {[
               "Too many priorities competing for attention at once",
-              "Unclear ownership — everyone thinks someone else will decide",
+              "Unclear ownership: everyone thinks someone else will decide",
               "Agreements made in meetings that don't hold outside them",
               "Effort going up, but output and morale going down",
             ].map((item, i) => (
@@ -114,7 +114,7 @@ export default function WhatWeDo() {
               h: "Reset & Redesign",
               sub: "Deeper reset plus structural redesign",
               bullets: [
-                "Full team diagnosis — priorities, ownership, decision rights",
+                "Full team diagnosis: priorities, ownership, decision rights",
                 "Facilitated conversations that surface and resolve real tensions",
                 "Redesigned team operating model with clear accountability",
                 "Follow-up check-in to reinforce what's changed",
@@ -141,7 +141,7 @@ export default function WhatWeDo() {
                 "Full diagnostic and redesign of team systems and culture",
                 "Bi-weekly sessions embedded in the team&apos;s real work",
                 "Leadership development woven into day-to-day operations",
-                "Stable, self-sustaining performance — less dependence on management effort",
+                "Stable, self-sustaining performance, with less dependence on management effort",
               ],
               note: "Best for: critical teams where high performance is non-negotiable.",
             },
@@ -179,17 +179,17 @@ export default function WhatWeDo() {
             {
               tag: "Diagnosis",
               h: "We start with how the team actually works",
-              p: "Before we run a single session, we understand the real situation — not the stated one. We identify the specific friction holding performance back.",
+              p: "Before we run a single session, we understand the real situation, not just the stated one. We identify the specific friction holding performance back.",
             },
             {
               tag: "Facilitation",
               h: "Structured conversations that shift behaviour",
-              p: "We facilitate the conversations leaders often avoid — on priorities, ownership, and accountability — and make them productive rather than painful.",
+              p: "We facilitate the conversations leaders often avoid on priorities, ownership, and accountability, and make them productive rather than painful.",
             },
             {
               tag: "Clarity",
               h: "Clear agreements that hold outside the room",
-              p: "We help teams agree on what matters, who owns what, and how decisions get made — so the same debates stop repeating week after week.",
+              p: "We help teams agree on what matters, who owns what, and how decisions get made, so the same debates stop repeating week after week.",
             },
             {
               tag: "Follow-through",
@@ -216,7 +216,7 @@ export default function WhatWeDo() {
           </h2>
           <p>
             Tell us what&apos;s happening and we&apos;ll recommend the right starting point.
-            No sales pitch — just a practical conversation.
+            No sales pitch. Just a practical conversation.
           </p>
           <Link href="/reach-out" className="cx-btn dark">Talk to us →</Link>
         </div>

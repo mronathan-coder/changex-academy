@@ -38,7 +38,7 @@ export default function Insights() {
           <div className="cx-hero-foot">
             <p className="lede">
               Practical perspectives on team performance, leadership, and the
-              real reasons organisations stall — and what to do about it.
+              real reasons organisations stall, and what to do about it.
             </p>
             <div className="right">
               <div className="cx-ticker">

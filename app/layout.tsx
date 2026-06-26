@@ -24,7 +24,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "ChangeX Academy of Business",
   description:
-    "We help leaders and their teams achieve meaningful, sustained performance — clarity, alignment, and decisions that stick.",
+    "We help leaders and their teams achieve meaningful, sustained performance: clarity, alignment, and decisions that stick.",
 };
 
 export default function RootLayout({

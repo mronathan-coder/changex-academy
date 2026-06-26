@@ -101,7 +101,7 @@ export default function SubscribeModal() {
               Subscribe to our monthly insights
             </h3>
             <p style={{ color: "var(--ink-soft)", fontSize: 15, marginBottom: 28 }}>
-              No noise — just practical perspectives on team performance, delivered once a month.
+              No noise. Just practical perspectives on team performance, delivered once a month.
             </p>
             <form onSubmit={handleSubmit} style={{ display: "flex", flexDirection: "column", gap: 14 }}>
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 14 }}>

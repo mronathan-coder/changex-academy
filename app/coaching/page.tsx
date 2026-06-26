@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
   title: "Coaching | Change_X Academy of Business",
-  description: "One-to-one coaching for leaders navigating real performance challenges — not a therapy session, a working relationship.",
+  description: "One-to-one coaching for leaders navigating real performance challenges. Not a therapy session; a working relationship.",
 };
 
 export default function Coaching() {
@@ -67,9 +67,9 @@ export default function Coaching() {
           </div>
           <div className="cx-prob-list">
             {[
-              "You're a capable leader — but the situation is genuinely hard",
+              "You're a capable leader, but the situation is genuinely hard",
               "You need someone who pushes back, not just listens",
-              "The challenges are live — decisions can't wait for the next workshop",
+              "The challenges are live. Decisions can't wait for the next workshop",
               "You want clarity and momentum, not a framework to implement",
             ].map((item, i) => (
               <div key={i} className="cx-prob-item" style={{ fontSize: "clamp(16px, 2vw, 28px)", paddingTop: "12px", paddingBottom: "12px" }} data-animate="" data-animate-delay={String(i * 120)}>
@@ -98,17 +98,17 @@ export default function Coaching() {
             {
               tag: "Clarity",
               h: "Getting clear on what actually matters right now",
-              p: "Too many priorities competing, pressure from multiple directions, an unclear mandate — we help you cut through and decide what to focus on.",
+              p: "Too many priorities competing, pressure from multiple directions, an unclear mandate. We help you cut through and decide what to focus on.",
             },
             {
               tag: "Decisions",
               h: "Making the calls you've been avoiding",
-              p: "Hard decisions with incomplete information, under political pressure, with real consequences. We work through them with you — not for you.",
+              p: "Hard decisions with incomplete information, under political pressure, with real consequences. We work through them with you, not for you.",
             },
             {
               tag: "Team",
               h: "Leading the team you have, not the one you want",
-              p: "Managing conflict, rebuilding trust, resetting expectations, navigating a poor performer — practical coaching on the real people dynamics.",
+              p: "Managing conflict, rebuilding trust, resetting expectations, navigating a poor performer. Practical coaching on the real people dynamics.",
             },
             {
               tag: "Presence",
@@ -139,7 +139,7 @@ export default function Coaching() {
               {
                 n: "01",
                 h: "An initial diagnostic conversation",
-                p: "We start by understanding the real situation — your role, your team, the challenges that are front of mind. No intake forms, just a direct conversation.",
+                p: "We start by understanding the real situation: your role, your team, the challenges that are front of mind. No intake forms, just a direct conversation.",
               },
               {
                 n: "02",
@@ -149,7 +149,7 @@ export default function Coaching() {
               {
                 n: "03",
                 h: "Between-session support",
-                p: "Access between sessions for decisions that can&apos;t wait. A quick call, a message, a sanity check — we&apos;re available when it matters.",
+                p: "Access between sessions for decisions that can&apos;t wait. A quick call, a message, a sanity check. We&apos;re available when it matters.",
               },
               {
                 n: "04",
@@ -204,7 +204,7 @@ export default function Coaching() {
           </h2>
           <p>
             Start with a no-obligation conversation. We&apos;ll work out together
-            whether coaching is the right move — and what it should look like for you.
+            whether coaching is the right move, and what it should look like for you.
           </p>
           <Link href="/reach-out" className="cx-btn dark">Book an initial call →</Link>
         </div>

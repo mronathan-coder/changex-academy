@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
   title: "Reach Out | Change_X Academy of Business",
-  description: "Get in touch with Change_X Academy — we respond fast, usually the same day.",
+  description: "Get in touch with Change_X Academy. We respond fast, usually the same day.",
 };
 
 export default function ReachOut() {
@@ -35,7 +35,7 @@ export default function ReachOut() {
           </h1>
           <div className="cx-hero-foot">
             <p className="lede">
-              We respond fast — usually the same day.
+              We respond fast, usually the same day.
             </p>
             <div className="right">
               <div className="cta">

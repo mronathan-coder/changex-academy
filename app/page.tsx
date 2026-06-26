@@ -94,7 +94,7 @@ export default function Home() {
             </div>
             <div className="cx-steps" style={{ alignSelf: "stretch", justifyContent: "space-between" }}>
               {[
-                { n: "01", h: "Diagnose what's in the way", p: "A practical read on how the team actually operates — not a theoretical model." },
+                { n: "01", h: "Diagnose what's in the way", p: "A practical read on how the team actually operates, not a theoretical model." },
                 { n: "02", h: "Reset how decisions get made", p: "Clear priorities, ownership and decision rights that hold under pressure." },
                 { n: "03", h: "Make the new way stick", p: "Support so performance becomes stable, not dependent on constant effort." },
               ].map(({ n, h, p }, i) => (
@@ -119,7 +119,7 @@ export default function Home() {
             </div>
           </div>
           {[
-            { dur: "1 Day",    h: "Team Reset",             p: "A focused, in-person offsite to reset how your team works — faster decisions, fewer repeated debates, shorter meetings." },
+            { dur: "1 Day",    h: "Team Reset",             p: "A focused, in-person offsite to reset how your team works: faster decisions, fewer repeated debates, shorter meetings." },
             { dur: "1 Month",  h: "Reset & Redesign",       p: "Reset and redesign how the team operates. Clear ownership, decisions made and held, friction reduced." },
             { dur: "3 Months", h: "Make It Stick",          p: "Embed new ways of working. Consistent decision-making, healthier disagreement, trust under pressure." },
             { dur: "6 Months", h: "Perform Under Pressure", p: "Shift how a critical team performs when it matters most. Sustained improvement, less dependence on constant effort." },

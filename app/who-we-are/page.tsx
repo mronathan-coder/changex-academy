@@ -71,16 +71,16 @@ export default function WhoWeAre() {
               <div className="cx-about-paras" style={{ display: "flex", flexDirection: "column", gap: 14 }}>
                 <p style={{ fontSize: 19, lineHeight: 1.7, color: "var(--ink-soft)", maxWidth: "44ch" }}>
                   We partner closely with leaders and their teams to address the real
-                  challenges that limit performance — unclear priorities, slow
+                  challenges that limit performance: unclear priorities, slow
                   decision-making, lack of accountability, and misaligned goals.
                 </p>
                 <p style={{ fontSize: 19, lineHeight: 1.7, color: "var(--ink-soft)", maxWidth: "44ch" }}>
                   We don&apos;t run generic programmes or off-the-shelf workshops. We work
                   directly in the context of your team&apos;s real work, so improvements
-                  hold under pressure — not just in the training room.
+                  hold under pressure, not just in the training room.
                 </p>
                 <p style={{ fontSize: 19, lineHeight: 1.7, color: "var(--ink-soft)", maxWidth: "44ch" }}>
-                  Every engagement is designed around your team&apos;s actual situation —
+                  Every engagement is designed around your team&apos;s actual situation,
                   the decisions that keep stalling, the friction that keeps returning,
                   and the changes that need to stick.
                 </p>
@@ -108,10 +108,10 @@ export default function WhoWeAre() {
           </div>
           <div className="cx-prob-list">
             {[
-              "They focus on individuals — but performance lives at the team level",
-              "They introduce change — but don't build the conditions for it to stick",
-              "They train people — but don't fix how the work is actually set up",
-              "They push harder — when what's needed is clarity, not effort",
+              "They focus on individuals, but performance lives at the team level",
+              "They introduce change, but don't build the conditions for it to stick",
+              "They train people, but don't fix how the work is actually set up",
+              "They push harder. What's needed is clarity, not effort",
             ].map((item, i) => (
               <div key={item} className="cx-prob-item" style={{ fontSize: "clamp(16px, 2vw, 28px)", paddingTop: "12px", paddingBottom: "12px" }} data-animate="" data-animate-delay={String(i * 120)}>
                 <span className="n">0{i + 1}</span>
@@ -144,7 +144,7 @@ export default function WhoWeAre() {
                 {
                   n: "01",
                   h: "Diagnose what's getting in the way",
-                  p: "A practical read on how the team actually operates — priorities, decisions, accountability, and friction points. Not a theoretical model.",
+                  p: "A practical read on how the team actually operates: priorities, decisions, accountability, and friction points. Not a theoretical model.",
                 },
                 {
                   n: "02",
@@ -154,7 +154,7 @@ export default function WhoWeAre() {
                 {
                   n: "03",
                   h: "Build stability, not dependency",
-                  p: "We help teams embed new ways of working so performance becomes consistent — and doesn't depend on constant management effort.",
+                  p: "We help teams embed new ways of working so performance becomes consistent, without depending on constant management effort.",
                 },
               ].map(({ n, h, p }, i) => (
                 <div key={n} className="cx-step" data-animate="" data-animate-delay={String(i * 150)}>
@@ -181,17 +181,17 @@ export default function WhoWeAre() {
             {
               tag: "Diagnosis",
               h: "A practical read on what's actually getting in the way",
-              p: "We start with how the team really operates — not assumptions. We identify the specific friction points holding performance back.",
+              p: "We start with how the team really operates, not assumptions. We identify the specific friction points holding performance back.",
             },
             {
               tag: "Conversations",
               h: "Structured team conversations that shift how people operate",
-              p: "We facilitate the conversations that leaders often avoid — on priorities, ownership, and accountability — and make them productive.",
+              p: "We facilitate the conversations that leaders often avoid on priorities, ownership, and accountability, and make them productive.",
             },
             {
               tag: "Clarity",
               h: "Clear definition of priorities, roles and decision rights",
-              p: "We help teams agree on what matters, who owns what, and how decisions get made — so the same debates stop repeating.",
+              p: "We help teams agree on what matters, who owns what, and how decisions get made, so the same debates stop repeating.",
             },
             {
               tag: "Embedding",

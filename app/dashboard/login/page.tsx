@@ -83,8 +83,8 @@ export default function DashboardLogin() {
           marginBottom: '20px',
         }} />
 
-        <p style={{ textAlign: 'center', color: '#888', fontSize: '13px', marginBottom: '28px', letterSpacing: '1px' }}>
-          Team Performance Dashboard &middot; Clear &middot; Aligned &middot; Effective
+        <p style={{ textAlign: 'center', color: '#888', fontSize: '13px', marginBottom: '28px', letterSpacing: '1px', lineHeight: 1.8 }}>
+          Team Performance Dashboard<br />&middot; Clear &middot; Aligned &middot; Effective &middot;
         </p>
 
         <div style={{ display: 'flex', gap: '8px', marginBottom: '24px' }}>
