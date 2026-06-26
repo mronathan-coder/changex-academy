@@ -9,57 +9,6 @@ export const metadata: Metadata = {
   description: "Practical perspectives on team performance, leadership, and the real reasons organisations stall.",
 };
 
-const articles = [
-  {
-    cat: "Team performance",
-    title: "Why most team offsites don't change anything",
-    summary:
-      "A two-day offsite with a great facilitator. Everyone leaves energised. Six weeks later, nothing has changed. Here's why — and what to do instead.",
-    date: "June 2025",
-    slug: "#",
-  },
-  {
-    cat: "Decision-making",
-    title: "The hidden cost of slow decisions",
-    summary:
-      "It's rarely the big decisions that stall teams. It's the medium ones — the ones that get deferred, revisited, and debated again and again until the energy runs out.",
-    date: "May 2025",
-    slug: "#",
-  },
-  {
-    cat: "Leadership",
-    title: "You're not the problem. The setup is.",
-    summary:
-      "Leaders often blame themselves when their team underperforms. But low performance is almost never a people problem. It's a structural one — and it's fixable.",
-    date: "April 2025",
-    slug: "#",
-  },
-  {
-    cat: "Team performance",
-    title: "Accountability without blame: how high-performing teams disagree",
-    summary:
-      "The teams that perform best aren't the ones that never disagree. They're the ones that have learned to disagree well — and still hold each other to account.",
-    date: "March 2025",
-    slug: "#",
-  },
-  {
-    cat: "Coaching",
-    title: "What good leadership coaching actually looks like",
-    summary:
-      "Most leaders have experienced coaching that felt good but changed nothing. Here's what separates the sessions that shift behaviour from the ones that don't.",
-    date: "February 2025",
-    slug: "#",
-  },
-  {
-    cat: "Decision-making",
-    title: "The one conversation every leadership team avoids — and needs to have",
-    summary:
-      "Priorities. Every team claims to have them. Almost none have actually agreed on them in a way that guides real decisions under pressure.",
-    date: "January 2025",
-    slug: "#",
-  },
-];
-
 export default function Insights() {
   return (
     <>
@@ -92,10 +41,6 @@ export default function Insights() {
               real reasons organisations stall — and what to do about it.
             </p>
             <div className="right">
-              <div className="cta">
-                <Link href="#articles" className="cx-btn">Read the latest →</Link>
-                <Link href="#articles" className="cx-btn ghost">See all insights</Link>
-              </div>
               <div className="cx-ticker">
                 <span className="cx-tick"><span className="d" />Team performance</span>
                 <span className="cx-tick"><span className="d" />Leadership</span>
@@ -106,29 +51,16 @@ export default function Insights() {
         </div>
       </section>
 
-      {/* ── Articles ── */}
-      <section className="cx-section" id="articles" style={{ padding: "36px 0" }}>
+      {/* ── Coming Soon ── */}
+      <section className="cx-section" id="articles" style={{ padding: "80px 0 100px" }}>
         <div className="cx-wrap">
-          <div className="cx-label-row" style={{ marginBottom: 14 }} data-animate="">
-            <span className="no">(01)</span>
-            <div>
-              <span className="cx-eyebrow">Latest thinking</span>
-              <h2 style={{ marginTop: 8 }}>Recent articles</h2>
-            </div>
+          <div data-animate="" style={{ maxWidth: "600px" }}>
+            <span className="cx-eyebrow" style={{ color: "var(--accent)", display: "block", marginBottom: "20px" }}>Coming soon</span>
+            <p style={{ fontSize: "clamp(22px, 3.2vw, 36px)", lineHeight: 1.5, color: "var(--ink)", opacity: 0.85 }}>
+              Our insights are on their way. Check back soon for articles, tools,
+              and thinking from the ChangeX Academy team.
+            </p>
           </div>
-          {articles.map(({ cat, title, summary, date, slug }, i) => (
-            <Link href={slug} key={title} className="cx-article-row" style={{ paddingTop: "14px", paddingBottom: "14px" }} data-animate="" data-animate-delay={String(i * 100)}>
-              <div className="cx-article-meta">
-                <span className="cx-eyebrow" style={{ color: "var(--accent)" }}>{cat}</span>
-                <span className="cx-article-date">{date}</span>
-              </div>
-              <div className="cx-article-body">
-                <h3>{title}</h3>
-                <p>{summary}</p>
-              </div>
-              <span className="go">→</span>
-            </Link>
-          ))}
         </div>
       </section>
 
@@ -139,8 +71,8 @@ export default function Insights() {
             Want these<br />in your <span className="acc">inbox?</span>
           </h2>
           <p>
-            We publish new thinking every month. No noise — just practical
-            perspectives on how teams perform.
+            We will be publishing new thinking on a regular basis. Subscribe to
+            our monthly insights using the button below.
           </p>
           <SubscribeModal />
         </div>
