@@ -52,11 +52,11 @@ export default function Insights() {
       </section>
 
       {/* ── Coming Soon ── */}
-      <section className="cx-section" id="articles" style={{ padding: "80px 0 100px" }}>
+      <section className="cx-section" id="articles" style={{ padding: "36px 0 0" }}>
         <div className="cx-wrap">
-          <div data-animate="" style={{ maxWidth: "600px" }}>
-            <span className="cx-eyebrow" style={{ color: "var(--accent)", display: "block", marginBottom: "20px" }}>Coming soon</span>
-            <p style={{ fontSize: "clamp(22px, 3.2vw, 36px)", lineHeight: 1.5, color: "var(--ink)", opacity: 0.85 }}>
+          <div data-animate="">
+            <span className="cx-eyebrow" style={{ color: "var(--accent)", display: "block", marginBottom: "16px" }}>Coming soon</span>
+            <p style={{ fontSize: "clamp(18px, 2.4vw, 28px)", lineHeight: 1.5, color: "var(--ink)", opacity: 0.85 }}>
               Our insights are on their way. Check back soon for articles, tools,
               and thinking from the ChangeX Academy team.
             </p>
