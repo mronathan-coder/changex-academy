@@ -132,33 +132,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── Results ── */}
-      <section className="cx-results cx-section">
-        <div className="cx-wrap">
-          <div className="cx-label-row" data-animate="">
-            <span className="no" style={{ color: "#fff" }}>(04)</span>
-            <div>
-              <span className="cx-eyebrow">The results</span>
-              <h2 style={{ marginTop: 8 }}>What this looks like in practice</h2>
-            </div>
-          </div>
-          <div className="cx-res-grid" data-animate="">
-            {[
-              { ico: "↑", lbl: "Higher engagement" },
-              { ico: "→", lbl: "Faster execution" },
-              { ico: "◇", lbl: "Stronger collaboration" },
-              { ico: "✓", lbl: "Better decisions" },
-              { ico: "⊞", lbl: "Greater accountability" },
-            ].map(({ ico, lbl }) => (
-              <div key={lbl} className="cx-res">
-                <div className="ico">{ico}</div>
-                <div className="lbl">{lbl}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ── CTA ── */}
       <section className="cx-cta" id="cta">
         <div className="cx-wrap" data-animate="">
